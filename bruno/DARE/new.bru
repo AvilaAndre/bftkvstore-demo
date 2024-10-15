@@ -1,0 +1,17 @@
+meta {
+  name: new
+  type: http
+  seq: 4
+}
+
+post {
+  url: 127.0.0.1:8001/new
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "2pset"
+  }
+}

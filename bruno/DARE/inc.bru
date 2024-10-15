@@ -1,0 +1,18 @@
+meta {
+  name: inc
+  type: http
+  seq: 5
+}
+
+post {
+  url: 127.0.0.1:8001/inc
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "key": "449587c9ebcfd079f2c68f0da57b46a960eabef64e7e0b8d412a1f898e472196",
+    "value": "5"
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: ping
+  type: http
+  seq: 2
+}
+
+post {
+  url: 127.0.0.1:8001/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "hostname": "localhost",
+    "port": 8089
+  }
+}

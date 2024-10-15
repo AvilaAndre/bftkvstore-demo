@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Project Demo</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<main>
+		<h1>Welcome to GoodBank</h1>
+		<div id="connectToTerminalInterface">
+			<label> Address:
+				<input id="terminalAddress" type="text" value="localhost" />
+			</label>
+			<label> Port:
+				<input id="terminalPort" type="text" value="8080" />
+			</label>
+			<input type="button" value="Connect" onclick="connectToTerminal()" />
+		</div>
+		<div id="terminalScreen">
+			<h2 id="terminalTitle"> GoodBank</h2>
+			<br>
+			<p id="terminalMsg"> Message </p>
+		</div>
+		<div id="terminalInterface">
+			<input type="button" value="Create Account" onclick="createAccount()" />
+			<br>
+			<input type="button" value="I already have an account" onclick="openAccountInterface()" />
+			<br>
+			<input type="button" value="Exit Terminal" onclick="exitTerminal()" />
+		</div>
+		<div id="accountInterface">
+			<label>
+				My account key
+				<br>
+				<input id="accountKey" type="text" value="" placeholder="Account Key" />
+			</label>
+
+
+			<br>
+			<input type="button" value="Check Balance" onclick="checkAccountBalance()" />
+
+			<br>
+			<input id="transferValue" type="number" value=0 />
+			<input type="button" value="Withdraw" onclick="withdrawFromAccount()" />
+			<input type="button" value="Deposit" onclick="depositToAccount()" />
+
+			<br>
+			<input type="button" value="Exit Terminal" onclick="exitTerminal()" />
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
+
+</html>

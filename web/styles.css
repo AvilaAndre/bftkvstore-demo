@@ -1,0 +1,17 @@
+#terminalScreen {
+	margin-bottom: 1rem;
+	border: green 2px solid;
+	background: lightgreen;
+	width: fit-content;
+	padding: 1rem;
+}
+
+#terminalTitle {
+	margin: 0;
+	padding: 0;
+}
+
+#terminalMsg {
+	margin: 0;
+	padding: 0;
+}
